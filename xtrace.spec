@@ -6,7 +6,6 @@ License:	BSD
 Group:		System/Kernel and hardware
 URL:		http://packages.debian.org/xtrace
 Source:		ftp.debian.org/debian/pool/main/x/xtrace/%{name}-%{version}.tar.bz2
-Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 Conflicts:	glibc-utils
 
 %description
