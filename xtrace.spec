@@ -1,7 +1,7 @@
 Summary:	An strace like program for tracing X11 connections
 Name:		xtrace
 Version:	0.8.0
-Release:	%mkrel 5
+Release:	%mkrel 6
 License:	BSD 
 Group:		System/Kernel and hardware
 URL:		http://packages.debian.org/xtrace
