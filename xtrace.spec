@@ -1,11 +1,11 @@
 Summary:	An strace like program for tracing X11 connections
 Name:		xtrace
-Version:	0.8.0
-Release:	%mkrel 6
+Version:	1.0.1
+Release:	%mkrel 1
 License:	BSD 
 Group:		System/Kernel and hardware
-URL:		http://packages.debian.org/xtrace
-Source:		ftp.debian.org/debian/pool/main/x/xtrace/%{name}-%{version}.tar.bz2
+URL:		https://alioth.debian.org/projects/xtrace/
+Source0:	http://ftp.de.debian.org/debian/pool/main/x/xtrace/%{name}_%{version}.orig.tar.gz
 Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 Conflicts:	glibc-utils
 
@@ -38,5 +38,4 @@ rm -rf %{buildroot}
 %doc README NEWS
 %{_bindir}/*
 %{_mandir}/man1/*
-
-
+%{_datadir}/%{name}/*.proto
