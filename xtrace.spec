@@ -1,6 +1,6 @@
 Summary:	An strace like program for tracing X11 connections
 Name:		xtrace
-Version:	1.0.1
+Version:	1.0.2
 Release:	%mkrel 1
 License:	BSD 
 Group:		System/Kernel and hardware
