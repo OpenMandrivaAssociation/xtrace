@@ -1,13 +1,13 @@
 Summary:	An strace like program for tracing X11 connections
 Name:		xtrace
 Version:	1.2.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	BSD 
 Group:		System/Kernel and hardware
 URL:		https://alioth.debian.org/projects/xtrace/
 Source0:	http://ftp.de.debian.org/debian/pool/main/x/xtrace/%{name}_%{version}.orig.tar.gz
 Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
-Conflicts:	glibc-utils
+#Conflicts:	glibc-utils
 
 %description
 What strace is for system calls, xtrace is for X11 connections:
@@ -26,9 +26,11 @@ CFLAGS="%{optflags} -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE"
 
 %install
 rm -rf %{buildroot}
-#mkdir -p $RPM_BUILD_ROOT/%_bindir
-#install -m 755 mbootpack $RPM_BUILD_ROOT/%_bindir/
+#mkdir -p $RPM_BUILD_ROOT/ % _bindir
+#install -m 755 mbootpack $RPM_BUILD_ROOT/ % _bindir/
 %makeinstall_std
+mv %{buildroot}/%_bindir/xtrace %buildroot/%_bindir/xtrace-x11
+
 
 %clean
 rm -rf %{buildroot}
