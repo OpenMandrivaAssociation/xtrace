@@ -7,6 +7,11 @@ Group:		System/Kernel and hardware
 URL:		https://alioth.debian.org/projects/xtrace/
 Source0:	http://ftp.de.debian.org/debian/pool/main/x/xtrace/%{name}_%{version}.orig.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 What strace is for system calls, xtrace is for X11 connections:
 you hook it between one or more X11 clients and an X server and
